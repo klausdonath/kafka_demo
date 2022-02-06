@@ -19,4 +19,5 @@ kafka-topics --zookeeper 127.0.0.1:2181 --topic first_topic --describe
 
 # Because of a bug here: https://issues.apache.org/jira/browse/KAFKA-1194
 # ,delete doesn't work.
+# only way to recover ist to delete the folders in data/kafka
 kafka-topics --zookeeper 127.0.0.1:2181 --topic first_topic --delete
